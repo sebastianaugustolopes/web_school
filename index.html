@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome icon link-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_query.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <button onclick="ToggleSidebar()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul id="menu">
+                    <li class="active"><a href="index.html">Home Page</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropdown-button">Galery <i class="fa-solid fa-chevron-down" onclick="rotateicon()"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#">Blog</a>
+                                <a href="#">Books</a>
+                                <a href="#">GitHub</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Help Center</a></li>
+                    <div class="nav-close" onclick="ToggleSidebar()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </ul>
+                <div class="brand">
+                    <a href="#"><img src="images/logo_cropped.png" alt="logo"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home-page">
+            <img class="cover1" src="images/cover.jpg" alt="Cover">
+            <div>
+                <header>
+                    <h1>Digital High-School</h1>
+                    <h2>A platform for studies - community - information - and technology</h2>
+                </header>
+                <div class="banner">
+                    <aside>
+                        <img src="images/logo_cropped.png" alt="Logo of Digital High-School">
+                        <p>Pre-university course</p>
+                    </aside>
+                    <section class="banner-info">
+                        <div class="badge">
+                            <p>25 weeks</p>
+                        </div>
+                        <div>
+                            <time datetime="2024-01-07"><strong>Start:</strong> 01/07/24</time><br>
+                            <time datetime="2024-09-08"><strong>Finish:</strong> 09/08/24</time>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quos nisi, exercitationem eligendi minima expedita ea corporis fuga.</p>
+                        <button>Learn more</button>
+                    </section>
+                </div>
+                <section class="cards">
+                    <article class="card">
+                        <a href="#">
+                            <img src="images/Book_banner.png" alt="Books banner">
+                            <h2>Books Recommendation</h2>
+                        </a>
+                    </article>
+                    <article class="card">
+                        <a href="#">
+                            <img src="images/Notion_banner.png" alt="Notion banner">
+                            <h2>Personal Notion Template For Students</h2>
+                        </a>
+                    </article>
+                    <article class="card">
+                        <a href="#">
+                            <img src="images/GitHub_banner.png" alt="GitHub banner">
+                            <h2>How to get started with GitHub?</h2>
+                        </a>
+                    </article>
+                </section>
+            </div>
+            <img class="cover2" src="images/cover_2.jpg" alt="Cover">
+        </section>
+    </main>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

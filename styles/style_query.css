@@ -1,0 +1,161 @@
+@media screen and (max-width: 1180px){
+    #menu{
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.970);
+        padding: 6rem 3.5rem 4.5rem;
+        width: 100%;
+        min-height: 100%;
+        flex-direction: column;
+    }
+
+    nav > button{
+        display: block;
+    }
+
+    .nav-close{
+        display: block;
+    }
+
+    ul {
+        display: none;
+        row-gap: 3rem;
+        align-items: flex-start; 
+    }
+
+    ul.show {
+        display: flex; 
+        left: 0;
+    }
+
+    li.active{
+        background-color: rgb(255, 255, 255);
+        a{
+            color: black;
+        }
+    }
+
+    li{
+        position: relative;
+        display: inline-flex;
+        transition: opacity 0.4s, margin 0.4s;
+    }
+    
+    li::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        height: 2px;
+        width: 0;
+        background-color: white;
+        transition: width 0.4s ease-out;
+    }
+    
+    li:hover {
+        margin-left: 2.5rem;
+    }
+    
+    li:hover::after{
+        width: 100%;
+    }
+
+    .dropdown-content{
+        position: static;
+    }
+
+    .dropdown-content > a{
+        margin: 0;
+    }
+
+    .dropdown-content > a::after{
+        content: none;
+    }
+
+    .dropdown-show{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .cover1{
+        display: none;
+    }
+    
+    .cover2{
+        display: block;
+        width: 40%;
+        margin-left: 20px;
+    }
+
+    #home-page{
+        position: static;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    #home-page div{
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    #home-page > div > header{
+        position: static;
+        height: auto;
+    }
+
+    #home-page header h1{
+        font-size: 60px;
+
+    }
+    
+    #home-page header h2{
+        font-size: 1.1em;
+    }
+
+    .cards{
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .card{
+        width: 180px;
+        height: 150px;
+        background-color: var(--color1);
+        border-radius: var(--border-radion);
+
+        padding: 20px;
+        font-size: 60%;
+        font-family: var(--font-kousel);
+        line-height: 18px;
+    }
+
+    .banner{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 913px) {
+    #home-page > div > header{
+        position: static;
+        height: auto;
+    }
+
+    #home-page header h1{
+        font-size: 60px;
+        width: 30%;
+
+    }
+    
+    #home-page header h2{
+        font-size: 1em;
+        width: 60%;
+    }
+
+}
