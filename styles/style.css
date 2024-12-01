@@ -67,6 +67,7 @@ nav > button {
 }
 
 .nav-close{
+    display: none;
     z-index: 1000;
     position: absolute;
     top: 1.5em;
@@ -288,8 +289,8 @@ aside > img{
 }
 
 .card{
-    width: 200px;
-    height: 180px;
+    width: 180px;
+    height: 150px;
     background-color: var(--color1);
     border-radius: var(--border-radion);
     margin-top: 10px;
@@ -300,8 +301,14 @@ aside > img{
     line-height: 20px;
 }
 
-.card img{
-    width: 100%;
+
+.icons{
+    fill: white;
+    display: block;
+    margin: auto;
+    width: 40%;
+    margin-bottom: 20px;
+
 }
 
 

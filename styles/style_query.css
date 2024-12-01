@@ -86,7 +86,6 @@
     .cover2{
         display: block;
         width: 40%;
-        margin-left: 40px;
     }
 
     #home-page{
@@ -100,6 +99,7 @@
     #home-page div{
         width: 50%;
         margin-top: 30px;
+        margin-right: 40px;
     }
 
     #home-page > div > header{
@@ -118,7 +118,7 @@
 
     .cards{
         position: static;
-        width: 100%;
+        width: 90%;
         display: flex;
         justify-content: center;
     }
@@ -142,9 +142,28 @@
 }
 
 @media screen and (max-width: 913px) {
-    #home-page > div > header{
-        position: static;
-        height: auto;
+
+    #home-page header h1{
+        font-size: 55px;
+    }
+    
+    #home-page header h2{
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 858px){
+    .cover2{
+        display: block;
+        width: 40%;
+        margin-right: 50px;
+    }
+
+
+    #home-page div{
+        margin: 0;
+        margin-left: 90px;
     }
 
     #home-page header h1{
@@ -154,8 +173,73 @@
     }
     
     #home-page header h2{
-        font-size: 1em;
-        width: 60%;
+        font-size: 1.1em;
+        width: 70%;
     }
 
+    .cards{
+        width: auto;
+        justify-content: start;
+        margin:  0;
+    }
+
+    .card{
+        padding: 0;
+        width: 30px;
+        height: auto;
+        background: none;
+    }
+    
+    .card h2{
+        display: none;
+    }
+
+    .icons{
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 658px){
+    .cover2{
+        display: block;
+        width: 280px;
+        height: 280px;
+    }
+
+
+    #home-page div{
+        margin-left: 20px;
+    }
+
+    #home-page header h1{
+        font-size: 40px;
+
+    }
+    
+    #home-page header h2{
+        font-size: 12px;
+        line-height: 15px;
+        width: 150px;
+
+    }
+
+    .cards{
+        width: auto;
+        justify-content: start;
+    }
+
+    .card{
+        padding: 0;
+        width: 30px;
+        height: auto;
+        background: none;
+    }
+    
+    .card h2{
+        display: none;
+    }
+
+    .icons{
+        width: 20px;
+    }
 }
