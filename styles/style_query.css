@@ -1,4 +1,8 @@
-@media screen and (max-width: 1180px){
+@media screen and (max-width: 1119px){
+    body{
+        background: black;
+    }
+
     #menu{
         position: fixed;
         left: 0;
@@ -27,6 +31,8 @@
     ul.show {
         display: flex; 
         left: 0;
+        margin: 0;
+        transition: 1s ease;
     }
 
     li.active{
@@ -76,9 +82,7 @@
     .dropdown-show{
         flex-direction: column;
     }
-}
 
-@media screen and (max-width: 1120px) {
     .cover1{
         display: none;
     }
@@ -86,30 +90,27 @@
     .cover2{
         display: block;
         width: 40%;
+        border-radius: var(--border-radion);
     }
 
     #home-page{
         position: static;
-        height: auto;
         display: flex;
         justify-content: center;
-        margin-top: 100px;
+        align-items: center;
     }
 
     #home-page div{
         width: 50%;
-        margin-top: 30px;
-        margin-right: 40px;
+        margin-right: 20px;
     }
 
     #home-page > div > header{
         position: static;
-        height: auto;
     }
 
     #home-page header h1{
-        font-size: 60px;
-
+        font-size: 3.6em;
     }
     
     #home-page header h2{
@@ -119,109 +120,48 @@
     .cards{
         position: static;
         width: 90%;
-        display: flex;
-        justify-content: center;
     }
     
     .card{
         width: 180px;
-        height: 150px;
-        background-color: var(--color1);
-        border-radius: var(--border-radion);
-
-        padding: 20px;
         font-size: 60%;
-        font-family: var(--font-kousel);
         line-height: 18px;
     }
 
     .banner{
         display: none;
     }
-
 }
 
 @media screen and (max-width: 913px) {
 
     #home-page header h1{
-        font-size: 55px;
+        font-size: 50px;
     }
     
     #home-page header h2{
-        font-size: 1em;
+        font-size: 15px;
     }
-
 }
 
-@media screen and (max-width: 858px){
-    .cover2{
-        display: block;
-        width: 40%;
-        margin-right: 50px;
-    }
-
+@media screen and (max-width: 855px){
 
     #home-page div{
-        margin: 0;
-        margin-left: 90px;
-    }
-
-    #home-page header h1{
-        font-size: 60px;
         width: 30%;
-
-    }
-    
-    #home-page header h2{
-        font-size: 1.1em;
-        width: 70%;
     }
 
-    .cards{
-        width: auto;
-        justify-content: start;
-        margin:  0;
-    }
-
-    .card{
-        padding: 0;
-        width: 30px;
-        height: auto;
-        background: none;
-    }
-    
-    .card h2{
-        display: none;
-    }
-
-    .icons{
-        width: 30px;
-    }
-}
-
-@media screen and (max-width: 658px){
-    .cover2{
-        display: block;
-        width: 280px;
-        height: 280px;
-    }
-
-
-    #home-page div{
-        margin-left: 20px;
+    #home-page > div > header{
+        position: static;
     }
 
     #home-page header h1{
-        font-size: 40px;
-
+        font-size: 3.6em;
     }
     
     #home-page header h2{
-        font-size: 12px;
-        line-height: 15px;
-        width: 150px;
-
+        font-size: .9em;
     }
+
 
     .cards{
         width: auto;
@@ -241,5 +181,28 @@
 
     .icons{
         width: 20px;
+    }
+}
+
+@media screen and (max-width: 524px){
+    .cover2{
+        width: 55%;
+    }
+
+    #home-page div{
+        width: 40%;
+        margin-left: 20px;
+    }
+
+    #home-page > div > header{
+        position: static;
+    }
+
+    #home-page header h1{
+        font-size: 3em;
+    }
+    
+    #home-page header h2{
+        font-size: .8em;
     }
 }
